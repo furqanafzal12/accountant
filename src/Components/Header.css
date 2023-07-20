@@ -1,0 +1,47 @@
+
+.header {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://images.pexels.com/photos/3184611/pexels-photo-3184611.jpeg?auto=compress&cs=tinysrgb&w=600"); /* Replace 'your-image-url.jpg' with the actual image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    height: 70vh; /* Replace with the color you want in the center */
+}
+
+/* Create a gradient on the left side */
+.header:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, transparent 50%, #fff 50%, #fff);
+    z-index: -1;
+    opacity: 2px;
+}
+
+/* Create a gradient on the right side */
+.header:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, transparent, transparent 50%, #fff 50%, #fff);
+    z-index: -1;
+}
+.form{
+    background-color:rgb(119, 94, 85);
+}
+.form h2{
+    font-weight: 200rem;
+    color: rgb(93, 94, 176);
+}
+.form h4{
+    color: azure;
+    font-weight: 100;
+}
